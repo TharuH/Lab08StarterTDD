@@ -12,4 +12,4 @@ public class CustomListTest {
     }
 
 }
-//failing hasCity()
+//passing hasCity()
