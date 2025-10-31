@@ -12,3 +12,4 @@ public class CustomListTest {
     }
 
 }
+//failing hasCity()
