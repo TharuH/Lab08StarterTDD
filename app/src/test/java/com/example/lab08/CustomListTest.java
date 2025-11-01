@@ -23,6 +23,21 @@ public class CustomListTest {
         assertFalse(list.hasCity(calgary), "Calgary should be removed");
         assertTrue(list.hasCity(edmonton), "Other cities should remain");
     }
+    @Test
+    public void countCitiesZero() {
+        CustomList list = new CustomList();
+        assertEquals(0, list.countCities(), "Empty list should count as 0");
+    }
+
+    @Test
+    public void countCitiesAdd() {
+        CustomList list = new CustomList();
+        list.addCity(new City("Calgary", "AB"));
+        assertEquals(1, list.countCities());
+
+        list.addCity(new City("Edmonton", "AB"));
+        assertEquals(2, list.countCities());
+    }
 
 }
 
